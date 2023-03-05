@@ -44,7 +44,7 @@ h1{
     left: 0;
     transition: 0.8s;
     min-height: 100vh;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     padding: 50px;
@@ -72,5 +72,11 @@ h1{
     color: black;
     padding: 5px 10px;
     cursor: pointer;
+}
+
+.popup.opened{
+    display: flex;
+    visibility: visible;
+    opacity: 1;
 }
 

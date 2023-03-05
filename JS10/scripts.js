@@ -24,49 +24,22 @@ event.target (event - это параметр функции-обработчи�
 
 
 
-let button = document.querySelector('.popup-btn');
-
+let openButton = document.querySelector('.popup-btn');
 let div = document.querySelector('.popup');
-
-let div1 = document.querySelector('.popup_content');
-
-let div2 = document.createElement('div');
-
-div2 = div;
-
-let button1 = document.querySelector('.popup_close');
-
-let target = window;
+let content = document.querySelector('.popup-content');
+let closeButton = document.querySelector('.popup_close');
 
 
-
-button.addEventListener('click', ()=>{
-    div1.classList.add('opened');
+openButton.addEventListener('click', ()=>{
+    div.classList.add('opened');
 });
 
-button1.addEventListener('click', ()=>{
-    div1.classList.remove('opened');
+closeButton.addEventListener('click', ()=>{
+    div.classList.remove('opened');
 });
-
-button.addEventListener('click', (event)=>{
-    
-    div2.style.opacity = '1';
-
-    div2.style.visibility = 'visible';
-});
-
-button1.addEventListener('click', (event)=>{
-
-    div2.style.opacity = '0';
-
-    div2.style.visibility = 'hidden';
-});
-
 window.addEventListener('click',(event)=>{
-    if(event.target.className =='popup'){
-        div2.style.opacity = '0';
-
-        div2.style.visibility = 'hidden';
+    if(event.target == div){
+        div.classList.remove('opened');
     }
 });
 
