@@ -1,0 +1,30 @@
+body {
+    position: relative;
+    background-size: cover;
+}
+
+img {
+    width: 200px;
+    height: 100px;
+    transition: 0.1s;
+}
+
+div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 200px;
+    background-color: rgba(128, 128, 128, 0.236);
+    padding: 30px;
+    width: 500px;
+    left: 500px;
+}
+
+img:active {
+    transform: scale(1.2);
+}
+
+.formarg {
+    margin-right: 20px;
+}
