@@ -1,0 +1,16 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.block{
+    width: 700px;
+    border: 10px solid blue;
+    margin-left: 300px;
+    padding: 80px;
+}
+
+.time{
+    text-align: center;
+    font-size: 50px;
+    color: purple;
+}
